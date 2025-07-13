@@ -1,0 +1,210 @@
+
+jdk: This has a java run time environment.
+intellij: Code editor for java.
+
+    ANATOMY OF JAVA
+1)function: The smallest building blocks of java programs.
+A function is a block of code that performs a particular task.
+There are two types of functions
+a)some return a value.
+b)some do not return anything(void).
+'void' is a reserve term in java
+    FUNCTION SYNTAX
+return type then,
+the name of the function,
+then parenthesis,
+then paramters,
+curly braces,
+the left brace should be on the same line with the function.
+    THE MAIN
+Every java function should have a main.
+The main is the entry point to our programs.
+Everytime we execute a java program, the main function get called and the code inside the function get executed.
+The function does not exist on their own, they are always inside a "class".
+    CLASS
+This is a container for one or more related functions.
+Every java program should have atleast one class that contains a main function.
+classes uses PascalNamingConvention.
+    HOW TO DEFINE A CLASS
+class Main {
+    void main() {
+        ...
+    }
+}
+    METHOD
+This is a function inside a class.
+We use camelNamingConvention.
+
+    ACCESS MODIFIER
+This is a special keyword that determines if other classes or methods can access the classes and methods in a program.
+    TYPES OF ACCESS MODIFIERS
+1)Public
+2)Private etc
+We put the access modifiers in front of our classes or methods.
+public class Main {
+    public void main() {
+        ...
+    }
+}
+
+we use classes to organise our code.
+we use packages to group related classes.
+All java files should have the java extension.
+Always terminate every statement.
+The main method in the program should always be static.
+
+    HOW JAVA CODE GETS EXECUTED
+1)Compilation: java compiler converts our code into Byte code(class) sends it
+to the java virtual machine and the machine converts it to native code that the computer can understand.
+Java is platform independent because you can write java code and execute it on windows, mac etc.
+2)Execution
+
+    VARIABLES
+This is used to temporarily store data in computer's memory.
+syntax
+int age = 30;
+we use camelCase for variables.
+
+    JAVA TYPES
+java has two categories of types
+1)primitive types: for storing simple values.
+for storing whole numbers
+-bytes
+-short
+-int
+-long
+for storing numbers with decimal points
+-float
+-double
+for storing single characters
+-char: surround single characters with single quotes and multiple characters with double quotes.
+for storing true/false
+-boolean
+
+2)reference types: for storing complex objects.
+when dealing with reference types, we should always allocate memory.
+    DIFFERENCE BETWEEN PRIMITIVE AND REFERENCE TYPES IN TERMS OF MEMORY MANAGEMENT
+1)Primitive type: when we assign a value to it, the value is stored in that memory location.
+when the value is updated, you have to reassign them to the primitive type.
+2)reference type: when we assign a value to a reference type, the address/reference of the value is stored in the memory and not the actual value.
+because they store a reference to the actual value somewhere in the memory.
+so when the value is updated, the references are also updated.
+    STRINGS
+strings are reference types in java
+you can initialize it with the 'new' keyword or use the shorthand method.
+since string is a class, it has methods that we can assess using the ""." operator.
+strings are immutable, They cannot change.
+    OPERATIONS ON STRINGS
+1)Concatination: join two or more strings together using the (+) operator.
+shortcuts
+    METHODS ON STRINGS
+1) .endsWith(): use to check if our string ends with a character or sequence of ,reruns boolean.
+2) .startsWith(): use to check if our string starts with a character, reruns boolean.
+3) .length(): used to check the length of a string, returns number.
+4) .indexOf(): This returns the index of the first occurrence of the character passed in.
+if you pass in a character that does not exist, we get "-1".
+5) .replace(): We can use this to replace one or more characters in a string.
+replace consist of two parameters, "target" and "replacement".
+This method returns a new string with the replaced characters.
+6) .toLowerCase(): Converts a string to lowercase.
+7) .trim(): This is used to get rid of white spaces either at the beginning or at the end of a string.
+    HOW TO INCLUDE SPECIAL CHARACTERS IN YOUR STRING
+1)Back slash (\): This is used to escape double quotes in a string.
+it is also used to escape backslash.
+2)\n: This is used to add a new line to a string.
+3)\t: This is used to add a tab in a string.
+    ARRAYS
+This is used to store a list of items.
+This is also a reference type.
+in java, array has a fixed size once they are defined
+    How to access elements in an array
+we use the array class(its a java.util package).
+There is an array method for all java types.
+or
+int [] numbers = {2, 3, 5, 1, 4};
+    METHODS IN AN ARRAY
+1) .length: used to know the size of an array.
+2) .sorts(): This method is used to sort an array
+    MULTI DIMENSIONAL ARRAYS
+we can use this to store a matrix or a data for a cube.
+
+    CONSTANTS
+These are variables that the values cannot be changed and it is denoted by "final".
+It is advisable to use all capital letters to name constants.
+
+    ARITHMETIC EXPRESSIONS
+An "expression" is a piece of code the produces a value.
+which are
+1)Addition(+)
+2)Subtraction(-)
+3)Multiplication(*)
+4)Division(/): When you divide whole numbers in java, you get a whole number as answer.
+5)Modulus(%): This is used to get the remainder after a division process.
+6)Increment(++)
+7)Decrement(--)
+8)Augmented Assignment Operator(+=).
+    ORDER OF OPERATIONS
+BODMAS: We use bodmas for mathematical operations.
+    CASTING
+1)implicit casting: This is automatic casting, converting a type to another type.
+2)Explicity castting: This is converting a type to another type. and this can only happen between compactible types.
+we have a "parse" class that can convert a string to an integer.
+    MATH CLASS
+This is a built in method in java used to perform math operations.
+1)Math.round: This rounds down a number to the smallest whole number.
+2)Math.ceil: This rounds a number up to the nearest whole number.
+3)Math.floor: This rounds down a number to the nearest whole number.
+4)Math.max: This compares two numbers and returns the maximum number.
+5)Math.min: This comapares two numbers and returns the minimum number.
+6)Math.random: This returns a random number between 0 and 1
+    FORMATTING NUMBERS
+we have a Number format class in java.text package.
+we cannot create an instance of the Number Format class cos it is "abstract".
+    Number Format class methods
+This class has a bunch of methods that is stored with get.
+    METHOD CHAINING
+This is used to chain methods together.
+    READING INPUTS
+we use system.in to read file in the terninal
+There are other methods used to read files also
+
+    COMPARISON OPERATOR
+We use this operator to compare primitive values.
+1) Equality operator(==)
+2) Inequality operator(!=): not equal to
+3) Greater than (>)
+4) Greater than or equal to (>=)
+5) Less than (<)
+6) Less than or equal (<=)
+
+    LOGICAL OPERATORS
+A Boolean expression produces a boolean value
+1)logical and operator (&&): Both condition has to be true.
+2)logical or Operator (||): One condition has to be true.
+3)logical not operator(!): This is used to reserve.
+
+    IF STATEMENTS
+They are used to make decisions based on certain conditions.
+we add braces when we have multiple statements in the if or else block.
+    TERNARY OPERATOR
+This takes a condition , ? and two values seperated by :
+    SWITCH STATEMENT
+We use switch statement to execute different parts of code, depending on the expression.
+
+    LOOPS
+1)For loops: We use for loops when we know the number of times we want to repeat something.
+2)While loops: We use while loops when we dont know the number of times we want to repeat something.
+3)Do while loops: This is similar to a while loop but this loop get executed once at least once even
+if the condition is true or not.
+
+    BREAK AND CONTINUE
+Break is used to terminate(stop) a code
+    shortcuts
+1) SOUT + TAP: To generate -System.out.println();
+2) Shift + f6 to rename a variable with it references
+
+class
+1)system class
+2)point class
+
+
