@@ -196,9 +196,15 @@ We use switch statement to execute different parts of code, depending on the exp
 2)While loops: We use while loops when we dont know the number of times we want to repeat something.
 3)Do while loops: This is similar to a while loop but this loop get executed once at least once even
 if the condition is true or not.
+4)FOR EACH LOOP:We use this loop to iterate over arrays or collections.
+you cannot iterate backwards, only forward.
+we also cannot access the index using for each loop.
 
     BREAK AND CONTINUE
-Break is used to terminate(stop) a code
+Break is used to terminate(stop) a code.
+Continue is used to skip a piece of code.
+
+
     shortcuts
 1) SOUT + TAP: To generate -System.out.println();
 2) Shift + f6 to rename a variable with it references
